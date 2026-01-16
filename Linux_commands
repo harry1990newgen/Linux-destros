@@ -1,0 +1,234 @@
+  1  ip a
+    2  clear
+    3  ip a
+    4  clear
+    5  ls - listing dir & files
+    6  ls
+    7  pwd
+    8  cd /tmp
+    9  ip a
+   10  pwd
+   11  cd /tmp
+   12  pwd
+   13  ls
+   14  ls -l
+   15  cd /bin
+   16  ls -l
+   17  cd /sbin
+   18  ll
+   19  yum install tree
+   20  useradd harry
+   21  passwd harry
+   22  sudo su - harry
+   23  history
+   24  ls -l
+   25  cd /tmp
+   26  clear
+   27  ls -l
+   28  touch file1
+   29  ls -l
+   30  cat file1
+   31  vi file1
+   32  cat file1
+   33  ls -l
+   34  vi file2
+   35  mkdir dir1
+   36  ls -l
+   37  cd dir1/
+   38  ls -l
+   39  touch file 3
+   40  ls -l
+   41  cd ..\
+   42  cd ..
+   43  clear
+   44  ls -l
+   45  cd ~
+   46  pwd
+   47  ;s -l
+   48  ls -l
+   49  cd /tmp
+   50  ls -l
+   51  rm -rf file1
+   52  ls -l
+   53  rm -rf dir1
+   54  ls -l
+   55  history
+   56  touch file1
+   57  ls -l
+   58  cat /etc/os-release
+   59  uname -a
+   60  who -b
+   61  uptime
+   62  top
+   63  init 6
+   64  ip a
+   65  ping 127.0.0.1
+   66  clear
+   67  ls -l
+   68  ls -la
+   69  ls -l
+   70  cd .ssh
+   71  ls -l
+   72  ls -la
+   73  cd ..
+   74  ls -ls
+   75  cleart
+   76  clear
+   77  mkdir devops
+   78  ll
+   79  mkdir /tmp/devops/ops
+   80  mkdir -p /tmp/devops/ops
+   81  ls -l  /tmp/devops/
+   82  pwd
+   83  ls -l /tmp/devops/ops
+   84  touch /tmp/devops/ops/file1.txt
+   85  ls -l /tmp/devops/ops
+   86  date
+   87  cd /tmp/devops/ops
+   88  ll
+   89  pwd
+   90  vi /tmp/devops/ops/file1.txt
+   91  vim /tmp/devops/ops/file1.txt
+   92  systemctl status sshd
+   93  systemctl status sshd.service
+   94  vim file1.txt
+   95  cat /etc/os-release
+   96  yum install vim
+   97  vim file1.txt
+   98  pwd
+   99  vim file2.txt
+  100  ll
+  101  vim file3
+  102  ll
+  103  yum install tree -y
+  104  yum remove tree -y
+  105  history
+  106  ll
+  107  pwd
+  108  cd /
+  109  ll
+  110  cd boot/
+  111  ll
+  112  cd ..
+  113  ll
+  114  cd /etc
+  115  ll
+  116  cd /
+  117  ll
+  118  cd home
+  119  ll
+  120  rm -rf putty-0.83 putty-0.83.tar.gz
+  121  ll
+  122  cd ..
+  123  cd /sbin
+  124  ll
+  125  cd /bin
+  126  ll
+  127  pwd
+  128  clear
+  129  find / -iname file1.txt
+  130  find /tmp -iname file1.txt
+  131  find /tmp -iname ".txt"
+  132  find /tmp -iname "*.txt"
+  133  find /tmp -iname "file*"
+  134  find /tmp -iname "file1"
+  135  find /tmp -iname "file1" -exec rm -i {} \;
+  136  find /tmp -iname "file1"
+  137  find /tmp -iname "file1.txt" -exec ls -l {} \;
+  138  ls -l /tmp/devops/ops/
+  139  mkdir -p /tmp/devops/ops/devops
+  140  ls -l /tmp/devops/ops/
+  141  sudo su - harry
+  142  cd /tmp/devops/ops/
+  143  ll
+  144  chown harry file1.txt
+  145  ll
+  146  sudo su - harry
+  147   useradd rahul
+  148  passwd rahul
+  149  cat /etc/passwd
+  150  clear
+  151  ll
+  152  chown rahul file1.txt
+  153  ll
+  154  chown :rahul file1.txt
+  155  ll
+  156  cd /
+  157  find /tmp -iname "file1.txt" -exec ls -l {} \;
+  158  find / -iname "file1.txt" -exec chown harry {} \;
+  159  ll /tmp/devops/ops/
+  160  cd /tmp/devops/ops/
+  161  ll
+  162  mkdir file1
+  163  ll
+  164  mkdir file
+  165  ll
+  166  cd /
+  167  find /tmp -type f -iname "file" ;
+  168  find /tmp -type f -iname "file"
+  169  find /tmp -type f -iname "file*" ;
+  170  ll /tmp/file2
+  171  find /tmp -type d -iname "file*" ;
+  172  find /tmp -type d -iname "file*" -exec ls -l {} \;
+  173  find /tmp -type d -iname "file*" -exec ls -l {} /;
+  174  find /tmp -type d -iname "file*" -exec ls -l {}\;
+  175  find /tmp -type d -iname "file*" -exec ll {} \;
+  176  find /tmp -type d -iname "file*" -exec ls {} \;
+  177  find /tmp -type d -iname "file*" -exec ls {}\;
+  178  find /tmp -type f -iname "file*" -exec ls -l {} ;
+  179  find /tmp  -iname "file*" -exec ls {}\;
+  180  find /tmp -iname "file*" -exec ls -l {}\;
+  181  find /tmp -iname "file*" -exec ls -l {} /;
+  182  find /tmp -iname "file1.txt" -exec ls -l {} \;
+  183  find /tmp -type f -iname "file1.txt" -exec ls -l {} \;
+  184  find /tmp -type d -iname "file1.txt" -exec ls -l {} \;
+  185  find /tmp -type d -iname "file*" -exec ls -l {} \;
+  186  find /tmp -type d -iname "file" -exec ls -l {} \;
+  187  find /tmp -type -d -iname "file" -exec ls -l {} \;
+  188  find /tmp -type d -iname "file" -exec ls -l {} \;
+  189  mkdir /tmp/devops/ops/file/harry
+  190  find /tmp -type d -iname "file" -exec ls -l {} \;
+  191  ll  /tmp/devops/ops/
+  192  cd /tmp/devops/ops/
+  193  ll
+  194  ls -l file
+  195  rm -rf file/harry/
+  196  ls -l file
+  197  mkdir file/rahul
+  198  cd /
+  199  find /tmp -type d -iname "file" -exec ls -l {} \;
+  200  clear
+  201  ll
+  202  cd /tmp/devops/ops/
+  203  ll
+  204  chown harry:harry file1
+  205  ll
+  206  chmod 777 file1
+  207  ll
+  208  find /tmp -type d -iname "file1" -exec chmod 644 {} \;
+  209  ll
+  210  history
+  211  clear
+  212  ip a
+  213  ip a
+  214  ls -l
+  215  mkdir git-push-test
+  216  cd git-push-test/
+  217  git clone https://github.com/harry1990newgen/devops_demo_git.git
+  218  yum install git -y
+  219  git clone https://github.com/harry1990newgen/devops_demo_git.git
+  220  ll
+  221  cd devops_demo_git/
+  222  ll
+  223  touch file2
+  224  git add .
+  225  git status
+  226  git commit "added file2"
+  227  git commit -m "added file2"
+  228  git push origin main
+  229  cd /boot/
+  230  ll
+  231  shutdown -r now
+  232  init 0
+  233  history
+
