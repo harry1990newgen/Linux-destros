@@ -1,0 +1,14 @@
+Patching : To update your linux system / To keep your system up to dated
+	1. Stop app/web services (systemctl stop httpd)
+	2. Stop DB services (Systemctl stop mysqld) 
+	3. Patching : (yum update -y) 
+	4. Sanity check (uptime/who -b/uname -r/a)
+	5. Start DB (systemctl start mysqld)
+	6. Start app (systemctl start httpd/gitlabd)
+
+System packages 
+Security Packages 
+
+Kernel also get up to dated if there is release
+System gets rebooted if required or kernel installed
+
