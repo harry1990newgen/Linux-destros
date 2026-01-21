@@ -1,0 +1,77 @@
+ 119  ip a
+  120  yum update
+  121  mkdir /gitops
+  122  cd /gitops
+  123  ll
+  124  vim patching_doc
+  125  ll
+  126  git init .
+  127  ll -a
+  128  git status
+  129  git add patching_doc
+  130  git status
+  131  git commit -m "patching docs"
+  132  git status
+  133  git remote add origin https://github.com/harry1990newgen/Linux-destros.git
+  134  git remote -v
+  135  git pull origin main
+  136  ll
+  137  git branch
+  138  git branch main
+  139  git branch
+  140  git switch main
+  141  git branch
+  142  ls -l
+  143  ls -la
+  144  git remote -v
+  145  git pull
+  146  git pull origin main
+  147  cd ..
+  148  ll
+  149  cd /gitops/
+  150  ls -ls
+  151  ls -la
+  152  rm -rf .git
+  153  ls -la
+  154  cd ..
+  155  ll
+  156  cd /gitops/
+  157  ls -la
+  158  git clone https://github.com/harry1990newgen/Linux-destros.git
+  159  ls -la
+  160  mv patching_doc Linux-destros/
+  161  ls -la
+  162  cd Linux-destros/
+  163  ls -la
+  164  git status
+  165  git add .
+  166  git commit -m "patching docs added"
+  167  git status
+  168  git branch
+  169  git push origin main
+  170  history
+  171  clear
+  172  cd /home/
+  173  ls -la
+  174  cat /etc/passwd
+  175  clear
+  176  yum install ansible -y
+  177  yum install ansible* -y
+  178  clear
+  179  yum search ansible
+  180  yum search ansible-*
+  181  yum install ansible-core -y
+  182  yum install epel-release -y
+  183  yum install ansible
+  184  cd /gitops/
+  185  ls -ls
+  186  cd Linux-destros/
+  187  ls -ls
+  188  vi ansible-installation
+  189  git status
+  190  git add .
+  191  git status
+  192  git commit -m "ansible doc"
+  193  git push origin main
+  194  history
+
