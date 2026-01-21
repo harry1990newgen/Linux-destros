@@ -1,0 +1,9 @@
+Vm01                                                                  vm02
+
+yum update -y                                                       yum update -y
+reboot                                                                        initi 6
+yum install epel-release                                   yum install epel-release
+yum install ansible -y
+ansible --version
+cat/etc/ansible/ansible.cfg 
+
