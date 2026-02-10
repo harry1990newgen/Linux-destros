@@ -1,0 +1,68 @@
+File/Dir permissions :
+
+[ansible@master ~]$ ll /home/ansible/.ssh/id_rsa
+
+-rwxrwxr-x. 1 ansible ansible 2602 Feb 10 09:16 /home/ansible/.ssh/id_rsa
+
+[ansible@master ~]$ ll Configuration-management
+total 120
+-rw-r--r--. 1 ansible webuser 116087 Feb  3 20:31 Ansible.pdf
+drwxr-xr-x. 2 ansible webuser     32 Feb  3 23:29 ansible-adhoc-commands
+drwxr-xr-x. 4 ansible webuser     55 Feb  4 01:02 ansible-playbooks
+-rw-r--r--. 1 ansible webuser    595 Feb  3 20:33 ansible-theory
+
+
+-                           r  w  x (owner)               rwx (group)                 r-x (other)
+file type                   4  2  1                           421                         4-1
+- (normal files)
+d (dir)
+c (char)
+l (link file)
+
+====================================================
+by default permission :    dir (755) ; file (644) 
+drwxr-xr-x. 2 root root 6 Feb 10 09:28 dir1
+-rw-r--r--. 1 root root 7 Feb 10 09:28 file1.txt
+====================================================
+Highest permission can be :
+777
+666
+=======================================================
+How to change file/dir permisisons for owner;group;other : (command : chmod )
+chmod 777 /your/fileOrDir/path
+chmod 755 /your/fileOrDir/path
+=============================================================
+How to change file/dir ownership : (command : chown )
+chown owner:group /your/fileOrDir/path (change owner+group both at once)
+chown ansible /your/fileOrDir/path  (change owner only)
+chown :ansible /your/fileOrDir/path (change group only)
+============================================================
+How to change file/dir group : (command : chgrp )
+chgrp ansible /your/fileOrDir/path
+
+==============================================================
+
+[root@master harry]# chmod 655 file1.txt
+[root@master harry]# ll
+total 4
+drwx------. 2 root root 6 Feb 10 09:28 dir1
+-rw-r-xr-x. 1 root root 7 Feb 10 09:28 file1.txt
+[root@master harry]# chown ansible file1.txt
+[root@master harry]# ll
+total 4
+drwx------. 2 root    root 6 Feb 10 09:28 dir1
+-rw-r-xr-x. 1 ansible root 7 Feb 10 09:28 file1.txt
+[root@master harry]# chown :ansible file1.txt
+[root@master harry]# ll
+total 4
+drwx------. 2 root    root    6 Feb 10 09:28 dir1
+-rw-r-xr-x. 1 ansible ansible 7 Feb 10 09:28 file1.txt
+[root@master harry]# chown root:root file1.txt
+[root@master harry]# ll
+total 4
+drwx------. 2 root root 6 Feb 10 09:28 dir1
+-rw-r-xr-x. 1 root root 7 Feb 10 09:28 file1.txt
+[root@master harry]#
+
+
+
